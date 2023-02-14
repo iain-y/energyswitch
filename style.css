@@ -1,0 +1,168 @@
+:root {
+    --primary: #f88c2e;
+    --secondary: #1bdbcb;
+    --tertiary: #252527;
+    --text-grey: #424242;
+    --light-grey: #e7edf5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-grey);
+    margin: 0;
+    background-color: var(--light-grey);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: .8em;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: var(--primary);
+}
+
+header {
+    background-color: var(--tertiary);
+    color: white;
+    padding: 2em 4em;
+    display:flex;
+    gap: 2em;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--primary);
+}
+
+#logo {
+    width: 8em;
+}
+
+header nav {
+    flex-grow: 1;
+    position: relative;
+}
+
+nav a {
+    margin-left: 5%;
+}
+
+.sign-in {
+    position: absolute;
+    right: 0;
+    background-color: var(--primary);
+    padding: .5em 2em;
+    border-radius: .5em;
+    top: -.5em;
+    font-weight: 600;
+}
+
+main {
+    padding: 3em 4em 5em 4em;
+}
+
+#steps {
+    margin: 0 auto 2em auto;
+    max-width: 980px;
+}
+
+#steps ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+#steps li {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 600;
+}
+
+#steps span {
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    background-color: #aaa;
+    margin: 0 auto .5em auto;
+    line-height: 2.1em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#steps span.done {
+    background-color: var(--primary);
+    color: white;
+}
+
+
+form {
+    background-color: white;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 3em 4em;
+    border-radius: 2em;
+}
+
+form h2 {
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+fieldset {
+    margin-bottom: 2em;
+    padding: 1em 2em 1em 2em;
+    border: 2px solid #ddd;
+    border-radius: 1em;
+}
+
+legend {
+    color: #777;
+}
+
+fieldset label {
+    display: block;
+}
+
+#name, .address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+#name div {
+    flex-grow: 1;
+    margin-bottom: 1em;
+}
+
+.address div {
+    min-width: 47.5%;
+    flex-grow: 1;
+    margin-bottom: 1em;
+}
+
+fieldset input {
+    width: 100%;
+}
+
+#pcodediv {
+    max-width: 47.5%;
+}
+
+#confirm {
+    margin-right: 1em;
+}
+
+.submit {
+    display: block;
+    background-color: var(--primary);
+    color: white;
+    border: 0;
+    font-weight: 600;
+    padding: .5em 3em;
+    font-size: 1.2em;
+    border-radius: .5em;
+    margin-top: 2em;
+}

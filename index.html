@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Energyswitch.co.uk</title>
+</head>
+<body>
+    <header>
+        <h1><img src="logo.svg" alt="energyswitch.co.uk" id="logo"></h1>
+        <nav>
+            <a>Compare Deals</a>
+            <a>About us</a>
+            <a>Contact</a>
+            <a class="sign-in">Sign In</a>
+        </nav>
+    </header>
+    <main>
+        <div id="steps">
+            <ul>
+                <li><span class="step-num done">1</span>Enter your details</li>
+                <li><span class="step-num">2</span>Create an account</li>
+                <li><span class="step-num">3</span>See your deals</li>
+            </ul>
+        </div>
+        <form action="account.html">
+            <h2>Enter your details to see your available energy deals</h2>
+            <fieldset id="name">
+                <legend>Your details</legend>
+                <div>
+                    <label for="fname">First name*</label>
+                    <input type="text" id="fname"/>
+                </div>             
+                <div>
+                    <label for="sname">Last name*</label>
+                    <input type="text" id="sname"/>
+                </div>                
+            </fieldset>
+            <fieldset class="address">
+                <legend>Your Address</legend>
+                <div>
+                    <label for="hnum">Address 1*</label>
+                    <input type="text" id="hnum"/><br>
+                </div>
+                <div>
+                    <label for="street">Address 2</label>
+                    <input type="text" id="street"/><br>
+                </div>
+                <div>
+                    <label for="city">Town/City*</label>
+                    <input type="text" id="city"/><br>
+                </div>
+                <div>
+                    <label for="county">County</label>
+                    <input type="text" id="county"/><br>
+                </div>
+                <div>
+                    <label for="postcode">Postcode*</label>
+                    <input type="text" id="postcode" size="8"/>
+                </div>
+                <div>
+                    <label for="resided">Resided since*</label>
+                    <input type="date" id="resided" />
+                </div>                 
+            </fieldset>
+            <fieldset class="address">
+                <legend>Previous Address</legend>
+                <div>
+                    <label for="phnum">Address 1*</label>
+                    <input type="text" id="phnum"/><br>
+                </div>
+                <div>
+                    <label for="pstreet">Address 2</label>
+                    <input type="text" id="pstreet"/><br>
+                </div>
+                <div>
+                    <label for="pcity">Town/City*</label>
+                    <input type="text" id="pcity"/><br>
+                </div>
+                <div>
+                    <label for="pcounty">County</label>
+                    <input type="text" id="pcounty"/><br>
+                </div>
+                <div>
+                    <label for="ppostcode">Postcode*</label>
+                    <input type="text" id="ppostcode" size="8"/>
+                </div>
+                <div>
+                    <label for="presided">Resided since*</label>
+                    <input type="date" id="presided" />
+                </div>                 
+            </fieldset>
+            <p>* required fields<br><br></p>
+            <input type="checkbox" id="confirm" /><label for="confirm">I confirm I am the bill payer for the above address or have their permission.</label>
+            <input type="submit" value="Continue" class="submit"/>
+        </form>
+    </main>
+</body>
+</html>
